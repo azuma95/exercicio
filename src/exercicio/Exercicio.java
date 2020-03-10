@@ -53,17 +53,40 @@ public class Exercicio {
     }
     }
     
-    public class PassagemVPesado extends Navio{
-        private int eixos;
+    public class PortaContentores{
+        private int ncontentores;
         
-        public PassagemVPesado(int c){
-            super(c);
+        public PortaContentores(int c){
+            ncontentores = c;
         }
-        public void setEixos(int e){
-            eixos = e;
+        public void setNContentores(int e){
+            ncontentores = e;
         }
-        public int getEixos(){
-            return eixos;
+        public int getNContentores(){
+            return ncontentores;
+        }
+    }
+    
+    public class Pretoleiro{
+        private float capCarga;
+        
+        public Pretoleiro(float p){
+            capCarga = p;
+        }
+        public void setCapCarga(float e){
+            capCarga = e;
+        }
+        
+    }
+    
+    public class Porto{
+        private String atracagem;
+        
+        public Porto(String a){
+            atracagem = a;
+        }
+        public void setAtracagem(String e){
+            atracagem = e;
         }
     }
 }
